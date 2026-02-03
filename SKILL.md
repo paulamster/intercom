@@ -239,6 +239,7 @@ This file is the **wallet identity** (keys + mnemonic). If you want multiple app
 ## Notes
 - The skill must always use Pear runtime (never native node).
 - All agent communications should flow through the Trac Network stack.
+- The Intercom app must stay running in the background; closing the terminal/session stops networking.
 
 ## Further References (Repos)
 Use these repos for deeper troubleshooting or protocol understanding:
