@@ -1,28 +1,28 @@
 # 🛡 Intercom Guardian – Smart Rate Limit & Abuse Monitor
 
-This fork upgrades Intercom with a Guardian Protection Layer.
+CLI-based security layer for Intercom.
 
-## 🔥 Features Added
+## Features
+- Smart rate limiting
+- Abuse monitoring
+- HTTP 429 protection
+- CLI executable
 
-- Smart Rate Limiting
-- Abuse Detection Engine
-- Wallet Reputation Scoring
-- Suspicious Activity Blocking
-- Guardian Monitoring
-
-## 🧠 How It Works
-
-Each wallet interaction is:
-1. Tracked
-2. Scored
-3. Evaluated
-4. Allowed or Blocked
-
-## 🚀 Run
+## Install
 
 npm install
-npm start
 
-## 🧾 Trac Address
+## Run via CLI
 
+guardian start
+
+## Test Endpoint
+
+GET http://localhost:3000/guardian
+
+Returns:
+200 → Active
+429 → Rate limit exceeded
+
+## Trac Address
 trac1mqdnc9phpuk4z7wp42epsznvfdlgvra4mrk7w86fk42zg5c45mns0vlv3c

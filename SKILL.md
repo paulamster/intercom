@@ -1,32 +1,14 @@
-# Intercom Guardian Skill
+# Skill Overview
 
-This fork adds a Guardian Protection Layer.
+Intercom Guardian is a CLI-powered security module that adds rate limit and abuse monitoring to protect API endpoints.
 
-## New Guardian Commands
+## Core Functionality
 
-POST /guardian
+- Detect excessive requests
+- Return 429 when abuse detected
+- Lightweight and scalable
+- Ready for production
 
-Body:
-{
-  "wallet": "0x123..."
-}
+## Commands
 
-Response:
-{
-  "wallet": "0x123...",
-  "reputation": "Trusted | Normal | Suspicious",
-  "blocked": false
-}
-
----
-
-## Agent Usage
-
-Agents must route wallet interactions through Guardian before execution.
-
-Guardian Responsibilities:
-
-- Rate limiting
-- Abuse detection
-- Reputation scoring
-- Suspicious blocking
+guardian start
