@@ -1,12 +1,8 @@
 const memory = {};
 
 export function guardianCheck(wallet) {
-  if (!wallet) {
-    return { error: "Wallet required" };
-  }
-
   if (!memory[wallet]) {
-    memory[wallet] = { count: 0 };
+    memory[wallet] = { count: 0, last: Date.now() };
   }
 
   memory[wallet].count++;
